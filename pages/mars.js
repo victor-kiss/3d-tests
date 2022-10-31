@@ -5,6 +5,8 @@ import styles from '../styles/Home.module.css'
 import {Canvas} from '@react-three/fiber'
 import {OrbitControls} from '@react-three/drei'
 
+import Navbar from '../navbar'
+
 import Mars from '../mars-model'
 
 export default function mars() {
@@ -13,7 +15,7 @@ export default function mars() {
       <Head>
         <title>3D TESTS</title>
       </Head>
-      <h1>3D TESTS</h1>
+      <Navbar/>
       <Canvas
       shadows={true}
       camera={{position:[0,0,10]}}
